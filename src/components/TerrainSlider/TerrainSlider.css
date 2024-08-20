@@ -1,0 +1,48 @@
+.section-header {
+  margin: 0 auto;
+  margin-top: 179px;
+  padding: 0;
+  color: var(--blue-color);
+  font-family: 'Unbounded';
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.24;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.terrain__flex-container {
+  margin: 124px 82px 0 71px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.terrain__slider {
+  width: 709px;
+  height: 457px;
+  border-radius: 50px;
+}
+
+.terrain__header {
+  width: 394px;
+  min-height: 90px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  color: var(--blue-color);
+  font-family: 'Unbounded';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.24;
+  text-transform: uppercase;
+}
+
+.terrain__text {
+  width: 394px;
+  min-height: 90px;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+}

@@ -1,0 +1,46 @@
+@font-face {
+  src:
+    url("./Montserrat/Montserrat-Medium.ttf");
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("./Montserrat/Montserrat-SemiBold.ttf");
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("./Montserrat/Montserrat-Bold.ttf");
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("./Unbounded/Unbounded-Medium.woff2") format("woff2"),
+    url("./Unbounded/Unbounded-Medium.woff") format("woff");
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url(".//Unbounded/Unbounded-Bold.woff2") format("woff2"),
+    url("./Unbounded/Unbounded-Bold.woff") format("woff");
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
