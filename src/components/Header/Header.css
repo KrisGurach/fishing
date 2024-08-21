@@ -1,0 +1,46 @@
+.header {
+  max-width: 1232px;
+  min-height: 97px;
+  margin: 16px auto 36px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 96px;
+  align-items: center;
+  text-align: center;
+}
+
+.header__menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.header__menu-link {
+  color: var(--blue-color);
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.22;
+  text-decoration: none;
+}
+
+.header__to-book {
+  width: 185px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 25px;
+  background-position: center;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  font-family: 'Unbounded';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.24;
+  cursor: pointer;
+  text-transform: uppercase;
+}

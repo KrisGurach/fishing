@@ -1,0 +1,9 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+@import url(./variables/variables.css);
+
+@import url(./components/Header/Header.css);
+@import url(./components/Main/Main.css);
+@import url(./components/TerrainSlider/TerrainSlider.css);
+@import url(./components/CardFish/CardFish.css);

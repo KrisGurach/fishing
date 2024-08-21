@@ -1,0 +1,70 @@
+.promotion {
+  position: relative;
+}
+
+.promotion__background-image {
+  max-width: 1232px;
+  min-height: 620px;
+  margin: 0 auto;
+  background-image: url(../../images/promotion.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.promotion__container {
+  width: 507px;
+  height: 470px;
+  background-image: url(../../images/promo-figure.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 292px;
+  left: calc((100% - 1232px)/2); /* от 1280 и выше, для меньших размеров переделать 1232*/
+  z-index: -1;
+}
+
+.promotion__header {
+  width: 565.5px;
+  min-height: 120px;
+  margin: 0 0 20px 105px;
+  padding-top: 110px;
+  color: var(--white-color);
+  font-family: 'Unbounded';
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.24;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.promotion__text {
+  width: 394px;
+  min-height: 160px;
+  margin: 0 0 89px 105px;
+  color: var(--white-color);
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.22;
+  z-index: 2;
+}
+
+.promotion__button {
+  margin-left: 105px;
+  padding: 0;
+  width: 185px;
+  min-height: 40px;
+  border: 2px solid var(--white-color);
+  border-radius: 25px;
+  box-sizing: content-box;
+  background-color: transparent;
+  color: var(--white-color);
+  font-family: 'Unbounded';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.24;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+}
