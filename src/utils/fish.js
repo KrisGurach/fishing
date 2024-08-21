@@ -8,6 +8,18 @@ const fish = [
     description: "червь, опарыш, тесто, перловка, манка, хлеб, кузнечики",
   },
 
+  {
+    title: "рак",
+    images: [image1, image2],
+    description: "червь, опарыш, тесто, перловка, манка, хлеб, кузнечики",
+  },
+
+  {
+    title: "рак",
+    images: [image1, image2],
+    description: "червь, опарыш, тесто, перловка, манка, хлеб, кузнечики",
+  },
+
 ];
 
 export default fish;
