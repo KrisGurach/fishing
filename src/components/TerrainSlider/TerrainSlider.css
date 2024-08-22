@@ -1,25 +1,13 @@
-.section-header {
-  margin: 0 auto;
-  margin-top: 179px;
-  padding: 0;
-  color: var(--blue-color);
-  font-family: 'Unbounded';
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.24;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .terrain__flex-container {
   display: flex;
-  align-items: flex-start; /* Выравнивание по верхнему краю */
+  align-items: flex-start;
   margin: 124px 82px 0 71px;
   gap: 24px;
 }
 
 .terrain__slider-container {
-  width: 62%; /* Установите ширину для контейнера слайдера */
+  width: 62%;
+  position: relative;
 }
 
 .terrain__image {
@@ -28,7 +16,7 @@
   border-radius: 50px;
 }
 
-.custom-dots {
+.terrain__slider-dots {
   display: flex;
   justify-content: flex-start;
   position: absolute;
@@ -39,7 +27,7 @@
   width: 50%;
 }
 
-.custom-dot {
+.terrain__slider-dot {
   width: 80px;
   height: 2px;
   background-color: var(--grey-color);
@@ -49,33 +37,37 @@
   transition: background-color 0.3s ease;
 }
 
-.custom-dot.active {
+.terrain__slider-dot.active {
   background-color: var(--blue-color);
 }
 
-.slider-navigation {
-  position: absolute;
-  top: 50%;
-  width: 84%;
+.terrain__slider-navigation {
+  margin-top: 55px;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%);
-  z-index: 10;
 }
 
-.nav-button {
-  margin: 10px;
-  padding: 3px;
-  background-color: rgba(255, 255, 255, 0.7);
-  font-size: 20px;
-  border-radius: 5px;
+.terrain__nav-button {
+  width: 40px;
+  height: 40px;
   border: none;
-  cursor: pointer;
   transition: background-color 0.3s ease;
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.nav-button:hover {
-  background-color: var(--blue-color);
+.terrain__nav-button:hover {
+  transform: scale(0.9);
+}
+
+.terrain__nav-button_left {
+  background-image: url(../../images/button-slider.svg);
+}
+
+.terrain__nav-button_right {
+  background-image: url(../../images/button-slider-right.svg);
 }
 
 .terrain__description {
