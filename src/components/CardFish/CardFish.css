@@ -1,8 +1,40 @@
+.card {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, 290px);
+  grid-auto-flow: dense;
+}
+
 .card__image {
-  width: 330px;
-  height: 390px;
+  /* width: 330px; */
+  height: 340px;
   background-size: cover;
   background-position: center;
-  /* border: solid 1px #000000;
-  border-radius: 74px; */
+  border-radius: 100px;
+}
+
+.card__text-container {
+  margin-left: 105px;
+  max-width: 185px;
+}
+
+.card__title {
+  color: var(--blue-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.card__question {
+  color: var(--orange-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.card__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
 }

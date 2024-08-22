@@ -5,7 +5,12 @@ export default function CardFish() {
   return (
     <div className="card">
       {fish.map((x, index) => (
-        <FishCard key={index} title={x.title} description={x.description} images={x.images} />
+        <FishCard
+          key={index}
+          title={x.title}
+          description={x.description}
+          images={x.images}
+        />
       ))}
     </div>
   );
@@ -24,9 +29,11 @@ function FishCard({ title, description, images }) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       ></div>
-      <h2 className="card__title">{title}</h2>
-      <p className="card__question">На что ловить?</p>
-      <p className="card__text">{description}</p>
+      <div className="card__text-container">
+        <h2 className="card__title">{title}</h2>
+        <p className="card__question">На что ловить?</p>
+        <p className="card__text">{description}</p>
+      </div>
     </div>
   );
 }
