@@ -12,16 +12,75 @@
 }
 
 .terrain__flex-container {
-  margin: 124px 82px 0 71px;
   display: flex;
-  flex-direction: row;
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  margin: 124px 82px 0 71px;
   gap: 24px;
 }
 
-.terrain__slider {
+.terrain__slider-container {
+  width: 62%; /* Установите ширину для контейнера слайдера */
+}
+
+.terrain__image {
   width: 709px;
   height: 457px;
   border-radius: 50px;
+}
+
+.custom-dots {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 50%;
+}
+
+.custom-dot {
+  width: 80px;
+  height: 2px;
+  background-color: var(--grey-color);
+  margin: 0 4px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-dot.active {
+  background-color: var(--blue-color);
+}
+
+.slider-navigation {
+  position: absolute;
+  top: 50%;
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.nav-button {
+  margin: 10px;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: var(--blue-color);
+}
+
+.terrain__description {
+  width: 25%;
+  margin-top: 58px;
 }
 
 .terrain__header {
