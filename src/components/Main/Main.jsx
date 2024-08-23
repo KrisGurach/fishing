@@ -1,4 +1,5 @@
 import CardFish from "../CardFish/CardFish";
+import Price from "../Price/Price";
 import TerrainSlider from "../TerrainSlider/TerrainSlider";
 
 export default function Main() {
@@ -25,10 +26,9 @@ export default function Main() {
         <CardFish />
       </section>
 
-
-
       <section className="price" id="price">
         <h2 className="section-header">Прайс</h2>
+        <Price />
       </section>
 
       <section className="discount" id="discount">

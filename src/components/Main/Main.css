@@ -1,3 +1,16 @@
+.section-header {
+  margin: 0 auto;
+  margin-top: 179px;
+  padding: 0;
+  color: var(--blue-color);
+  font-family: 'Unbounded';
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.24;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .promotion {
   position: relative;
 }
