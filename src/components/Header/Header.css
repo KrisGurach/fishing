@@ -1,8 +1,6 @@
 .header {
-  min-width: 320px;
-  max-width: 1232px;
   min-height: 97px;
-  margin: 16px auto 36px;
+  margin: 16px 24px 36px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -20,6 +18,8 @@
 }
 
 .header__menu-link {
+  margin: 0;
+  padding: 0;
   color: var(--blue-color);
   font-family: 'Montserrat';
   font-size: 14px;
@@ -44,4 +44,54 @@
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
+}
+
+.header__to-book:hover {
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 1281px) {
+  .header {
+    margin-left: calc((100% - 1204px) / 2);
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .header {
+    margin-left: calc((100% - 942px) / 2);
+    gap: 36px
+  }
+
+  .header__menu {
+    gap: 10px;
+  }
+
+  .header__menu-link {
+    font-size: 12px
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    width: 760px;
+    margin-left: calc((100% - 760px) / 2);
+    gap: 12px
+  }
+
+  .header__menu-link {
+    font-size: 10px
+  }
+
+  .header__to-book {
+    width: 166px;
+    font-size: 8px;
+  }
+}
+
+/* Доделать бургер для мобилки */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
 }

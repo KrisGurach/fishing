@@ -5,7 +5,7 @@ import TerrainSlider from "../TerrainSlider/TerrainSlider";
 export default function Main() {
   return (
     <section className="main">
-      <div className="promotion">
+      <section className="promotion">
         <div className="promotion__background-image">
           <h1 className="promotion__header">Трофейная рыбалка</h1>
           <p className="promotion__text">
@@ -17,7 +17,7 @@ export default function Main() {
           <button className="promotion__button">Подробнее</button>
         </div>
         <div className="promotion__container"></div>
-      </div>
+      </section>
 
       <TerrainSlider />
 

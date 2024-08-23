@@ -48,6 +48,7 @@
 }
 
 .terrain__nav-button {
+  padding: 0;
   width: 40px;
   height: 40px;
   border: none;
@@ -95,4 +96,62 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.22;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .terrain__flex-container {
+    margin-top: 70px;
+    margin-left: calc((100% - 942px) / 2);
+    margin-right: calc((100% - 942px) / 2);
+  }
+
+  .terrain__description {
+    margin-top: 16px;
+  }
+
+  .terrain__header {
+    max-width: 388px;
+    min-height: 70px;
+    font-size: 20px;
+  }
+
+  .terrain__text {
+    width: 288px;
+  }
+
+  .terrain__image {
+    width: 620px;
+    height: 400px
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .terrain__flex-container {
+    margin-top: 70px;
+    margin-left: calc((100% - 760px) / 2);
+    margin-right: calc((100% - 760px) / 2);
+  }
+
+  .terrain__description {
+    margin-top: 16px;
+  }
+
+  .terrain__header {
+    max-width: 250px;
+    min-height: 40px;
+    font-size: 16px;
+  }
+
+  .terrain__text {
+    width: 288px;
+    font-size: 12px;
+  }
+
+  .terrain__image {
+    width: 471px;
+    height: 303px
+  }
+
+  .terrain__slider-navigation {
+    margin-top: 20px;
+  }
 }

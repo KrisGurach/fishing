@@ -33,7 +33,7 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 292px;
-  left: calc((100% - 1232px)/2); /* от 1280 и выше, для меньших размеров переделать 1232*/
+  left: calc((100% - 1232px)/2);
   z-index: -1;
 }
 
@@ -80,4 +80,56 @@
   text-transform: uppercase;
   cursor: pointer;
   z-index: 2;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .promotion__background-image {
+    max-width: 942px;
+    min-height: 474px;
+  }
+
+  .promotion__header {
+    padding-top: 60px;
+  }
+
+  .promotion__text {
+    margin-bottom: 10px;
+  }
+
+  .promotion__container {
+    top: 150px;
+    left: calc((100% - 942px)/2);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .promotion__background-image {
+    max-width: 760px;
+    min-height: 382px;
+  }
+
+  .promotion__header {
+    margin-left: 50px;
+    min-height: 70px;
+    font-size: 24px;
+    padding-top: 50px;
+  }
+
+  .promotion__text {
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  .promotion__button {
+    margin-left: 50px;
+  }
+
+  .promotion__container {
+    top: 30px;
+    left: calc((100% - 760px)/2);
+  }
+}
+
+/* Видоизменить для мобилки */
+@media screen and (min-width: 320px) and (max-width: 767px) {
 }
