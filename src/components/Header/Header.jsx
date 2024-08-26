@@ -10,7 +10,7 @@ export default function Header() {
       <a href="#terrain" className="header__menu-link">Местность</a>
       <a href="#bestiary" className="header__menu-link">Бестиарий</a>
       <a href="#price" className="header__menu-link">Прайс</a>
-      <a href="#discount" className="header__menu-link">Акции</a>
+      <a href="#action" className="header__menu-link">Акции</a>
       <a href="#abonement" className="header__menu-link">Абонемент</a>
       <a href="#rules" className="header__menu-link">Правила отдыха</a>
       <a href="#reviews" className="header__menu-link">Отзывы</a>

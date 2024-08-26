@@ -1,3 +1,4 @@
+import Action from "../Action/Action";
 import CardFish from "../CardFish/CardFish";
 import Price from "../Price/Price";
 import TerrainSlider from "../TerrainSlider/TerrainSlider";
@@ -31,8 +32,9 @@ export default function Main() {
         <Price />
       </section>
 
-      <section className="discount" id="discount">
+      <section className="action" id="action">
         <h2 className="section-header">Акции</h2>
+        <Action />
       </section>
 
       <section className="abonement" id="abonement">
