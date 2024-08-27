@@ -1,0 +1,43 @@
+.scroll-container {
+  display: flex;
+  align-items: center; /* Выравнивание по центру */
+}
+
+.scroll-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Включаем горизонтальный скроллинг */
+  border: 1px solid #ccc; /* Граница контейнера */
+  white-space: nowrap; /* Запрет переноса строк */
+  padding: 10px; /* Отступы */
+}
+
+.scroll-content {
+  display: flex; /* Используем flexbox для прямой прокрутки */
+}
+
+.review__card {
+  min-width: 150px; /* Ширина элемента */
+  background-color: lightcoral; /* Цвет фона элементов */
+  margin-right: 10px; /* Отступ между элементами */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; /* Граница для элементов */
+}
+
+.scroll-button {
+  background-color: #f0f0f0; /* Цвет фона кнопки */
+  border: 1px solid #ccc; /* Граница кнопки */
+  padding: 10px; /* Отступы внутри кнопки */
+  cursor: pointer; /* Указатель при наведении */
+  margin: 0 5px; /* Отступы между кнопками и контейнером */
+  font-size: 20px; /* Размер шрифта */
+}
+
+.scroll-button:hover {
+  background-color: #e0e0e0; /* Цвет фона кнопки при наведении */
+}
+
+.review__review {
+  max-width: 395px;
+}

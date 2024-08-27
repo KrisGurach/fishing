@@ -2,6 +2,7 @@ import Abonement from "../Abonement/Abonement";
 import Action from "../Action/Action";
 import CardFish from "../CardFish/CardFish";
 import Price from "../Price/Price";
+import Reviews from "../Reviews/Reviews";
 import Rules from "../Rules/Rules";
 import TerrainSlider from "../TerrainSlider/TerrainSlider";
 
@@ -51,6 +52,7 @@ export default function Main() {
 
       <section className="reviews" id="reviews">
         <h2 className="section-header">Отзывы наших гостей</h2>
+        <Reviews />
       </section>
 
       <section className="about the catch">
