@@ -1,5 +1,4 @@
 import action from "../../utils/action";
-
 import React, { useRef, useEffect } from "react";
 import Slider from "react-slick";
 
@@ -38,18 +37,17 @@ export default function Action() {
   return (
     <>
       <div className="action-container">
+
         <button
           className="terrain__nav-button action__nav-button_left"
           onClick={prevSlide}
         ></button>
-        <div style={{ flex: "1"}}>
+
+        <div className="action__slider-container"> 
           <Slider ref={sliderRef} {...settings}>
             {action.map((x, index) => (
               <div key={index}>
-                <div
-                  className="action__flex-container"
-                  style={{ display: "flex" }}
-                >
+                <div className="action__flex-container">
                   <div className="action__text-container">
                     <p className="action__title">{x.title}</p>
                     <p>{x.description}</p>
@@ -60,6 +58,7 @@ export default function Action() {
             ))}
           </Slider>
         </div>
+
         <button
           className="terrain__nav-button action__nav-button_right"
           onClick={nextSlide}

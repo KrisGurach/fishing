@@ -1,7 +1,15 @@
 .action-container {
+  display: flex;
+  align-items: center;
   max-width: 1280px;
-  /* display: flex; */
-  /* align-items: center; */
+  margin: 120px auto 0;
+  margin-left: calc((100% - 1150px) / 2);
+}
+
+.action__slider-container {
+  flex: 1;
+  max-width: 1022px;
+  margin: 0 24px;
 }
 
 .action__flex-container {

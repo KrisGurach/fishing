@@ -1,3 +1,4 @@
+import Abonement from "../Abonement/Abonement";
 import Action from "../Action/Action";
 import CardFish from "../CardFish/CardFish";
 import Price from "../Price/Price";
@@ -39,6 +40,7 @@ export default function Main() {
 
       <section className="abonement" id="abonement">
         <h2 className="section-header">Абонементы</h2>
+        <Abonement />
       </section>
 
       <section className="rules" id="rules">
