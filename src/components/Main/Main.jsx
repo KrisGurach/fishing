@@ -2,6 +2,7 @@ import Abonement from "../Abonement/Abonement";
 import Action from "../Action/Action";
 import CardFish from "../CardFish/CardFish";
 import Price from "../Price/Price";
+import Rules from "../Rules/Rules";
 import TerrainSlider from "../TerrainSlider/TerrainSlider";
 
 export default function Main() {
@@ -45,6 +46,7 @@ export default function Main() {
 
       <section className="rules" id="rules">
         <h2 className="section-header">Правила отдыха</h2>
+        <Rules />
       </section>
 
       <section className="reviews" id="reviews">
