@@ -24,7 +24,7 @@
 }
 
 .review__name {
-  color: var(--blue-color);
+  color: var(--blue-element-color);
   font-family: "Unbounded";
   font-size: 20px;
   font-weight: 600;

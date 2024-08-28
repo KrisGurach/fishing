@@ -38,7 +38,7 @@ export default function FormReview() {
                 style={{
                   background: image
                     ? "none"
-                    : "linear-gradient(90deg, #0062BD 100%, #0066FF 100%)",
+                    : "linear-gradient(rgba(0,98,189,1), rgba(0,102,255,1))",
                 }}
               >
                 {image ? (

@@ -19,7 +19,7 @@ function PriceCard({ title, description, price}) {
   return(
     <div className="price-card">
       <h3 className="price-card__title">{title}</h3>
-      <p className="price-card__text">{description}</p>
+      <p>{description}</p>
       <p className="price-card__price">{price}</p>
     </div>
   )

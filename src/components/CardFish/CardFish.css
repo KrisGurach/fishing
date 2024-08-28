@@ -19,7 +19,7 @@
 }
 
 .card__title {
-  color: var(--blue-color);
+  color: var(--blue-element-color);
   font-family: 'Unbounded';
   font-size: 18px;
   font-weight: 700;
