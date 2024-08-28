@@ -6,25 +6,23 @@ export default function Reviews() {
 
   const scrollLeft = () => {
     scrollRef.current.scrollBy({
-      left: -300,
+      left: -500,
       behavior: "smooth",
     });
   };
 
   const scrollRight = () => {
     scrollRef.current.scrollBy({
-      left: 300,
+      left: 500,
       behavior: "smooth",
     });
   };
 
   return (
-    <div className="scroll-container">
-      <button onClick={scrollLeft} className="scroll-button">
-        ⬅️
-      </button>
-      <div className="scroll-wrapper" ref={scrollRef}>
-        <div className="scroll-content">
+    <div className="review__scroll-container">
+      <button onClick={scrollLeft} className="review__scroll-button review__scroll-button_left"></button>
+      <div className="review__scroll-wrapper" ref={scrollRef}>
+        <div className="review__scroll-content">
           {reviews.map((x, index) => (
             <ReviewCard
               key={index}
@@ -36,9 +34,7 @@ export default function Reviews() {
           ))}
         </div>
       </div>
-      <button onClick={scrollRight} className="scroll-button">
-        ➡️
-      </button>
+      <button onClick={scrollRight} className="review__scroll-button review__scroll-button_right"></button>
     </div>
   );
 }
@@ -46,8 +42,8 @@ export default function Reviews() {
   function ReviewCard({ image, stars, name, review }) {
     return (
       <div className="review-card">
-        <img src={image} alt="изображение" />
-        <div className="review__stars">{stars}</div>
+        <img src={image} className="review__photo" alt="изображение" />
+        <img src={stars} className="review__stars" alt="изображение" />
         <p className="review__name">{name}</p>
         <p className="review__review">{review}</p>
       </div>

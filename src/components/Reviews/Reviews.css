@@ -1,43 +1,60 @@
-.scroll-container {
+.review__scroll-container {
+  margin-top: 120px;
   display: flex;
-  align-items: center; /* Выравнивание по центру */
-}
-
-.scroll-wrapper {
-  width: 100%;
-  overflow-x: auto; /* Включаем горизонтальный скроллинг */
-  border: 1px solid #ccc; /* Граница контейнера */
-  white-space: nowrap; /* Запрет переноса строк */
-  padding: 10px; /* Отступы */
-}
-
-.scroll-content {
-  display: flex; /* Используем flexbox для прямой прокрутки */
-}
-
-.review__card {
-  min-width: 150px; /* Ширина элемента */
-  background-color: lightcoral; /* Цвет фона элементов */
-  margin-right: 10px; /* Отступ между элементами */
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border: 1px solid #ccc; /* Граница для элементов */
 }
 
-.scroll-button {
-  background-color: #f0f0f0; /* Цвет фона кнопки */
-  border: 1px solid #ccc; /* Граница кнопки */
-  padding: 10px; /* Отступы внутри кнопки */
-  cursor: pointer; /* Указатель при наведении */
-  margin: 0 5px; /* Отступы между кнопками и контейнером */
-  font-size: 20px; /* Размер шрифта */
+.review__scroll-wrapper {
+  width: 90%;
+  overflow-x: auto;
 }
 
-.scroll-button:hover {
-  background-color: #e0e0e0; /* Цвет фона кнопки при наведении */
+.review__scroll-content {
+  display: flex;
+}
+
+.review-card {
+  margin-right: 24px;
+}
+
+.review__photo {
+  width: 291px;
+  height: 230px;
+  border-radius: 25px;
+}
+
+.review__name {
+  color: var(--blue-color);
+  font-family: "Unbounded";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.22;
 }
 
 .review__review {
   max-width: 395px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.22;
+}
+
+.review__scroll-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.review__scroll-button_left {
+  background-image: url(../../images/button-slider.svg);
+}
+
+.review__scroll-button_right {
+  background-image: url(../../images/button-slider-right.svg);
+}
+
+.review__scroll-button:hover {
+  transform: scale(0.9);
 }
