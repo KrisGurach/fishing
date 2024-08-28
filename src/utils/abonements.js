@@ -22,8 +22,8 @@ const abonements = [
       <>
         <p className="abonement__description">Клубная карта дает право на неограниченное посещение рыболовного клуба в период:
           с апреля по декабрь 2023 года включительно. Самовылов не более
-          <strong style={{ color: 'orange' }}> 3 кг/сутки</strong>,
-          с ограничением на <strong style={{ color: 'orange' }}>4 удочки</strong>.</p>
+          <strong style={{ color: '#F15A29' }}> 3 кг/сутки</strong>,
+          с ограничением на <strong style={{ color: '#F15A29' }}>4 удочки</strong>.</p>
       </>
     ),
     text: "Стоимость:",

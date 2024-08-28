@@ -110,6 +110,10 @@
   color: var(--white-color);
   border: none;
   border-radius: 25px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.22;
+  text-transform: uppercase;
 }
 
 .form__notice {
