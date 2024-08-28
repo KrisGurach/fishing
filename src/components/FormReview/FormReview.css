@@ -1,36 +1,116 @@
+.form {
+  margin-top: 120px;
+}
+
+.form__flex-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .image-container {
-  width: 300px;
-  height: 200px;
-  background-color: lightblue; /* Синий фон */
+  width: 293px;
+  height: 343px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed #ccc; /* Пример стиля обрамления */
-  margin-top: 10px;
+  background: linear-gradient(90deg, #0062BD 100%, #0066FF 100%);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.form__preview {
+  width: 293px;
+  height: auto;
+  border-radius: 25px;
+}
+
+.form__photo-placeholder {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 20px;
 }
 
 .placeholder {
-  color: #555; /* Цвет текста для плейсхолдера */
+  color: var(--white-color);
+  max-width: 109px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  font-family: "Unbounded";
+  font-size: 16px;
+  font-family: 500;
+  line-height: 1.5;
+}
+
+.form__contacts {
+  margin-bottom: 30px;
+}
+
+.form__input {
+  width: 395px;
+  height: 40px;
+  padding: 0 0 0 20px;
+  border: 2px solid var(--light-grey-color);
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.form__input_review {
+  margin-bottom: 20px;
+  width: 814px;
+  height: 160px;
+}
+
+.form__star-text {
+  color: var(--blue-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.22;
 }
 
 .star-rating {
+  margin-bottom: 30px;
   display: flex;
-  align-items: center; /* Выравнивание по центру */
-  cursor: pointer; /* Указатель при наведении на звезды */
+  align-items: center;
+  cursor: pointer;
 }
 
 .star {
-  font-size: 30px; /* Размер звезд */
-  color: lightgray; /* Цвет пустой звезды */
-  transition: color 0.2s; /* Плавный переход цвета */
+  font-size: 30px;
+  color: lightgray;
+  transition: color 0.2s;
 }
 
 .star.filled {
-  color: gold; /* Цвет заполненной звезды */
+  color: var(--orange-color);
 }
 
 .rating-value {
   margin-left: 10px; /* Отступ между звездами и количеством */
   font-size: 20px; /* Размер шрифта для отображения оценки */
+}
+
+.form__star-text {
+  margin: 0;
+  padding: 0;
+}
+
+.form__button {
+  width: 253px;
+  height: 39px;
+  background-color: var(--blue-element-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 25px;
+}
+
+.form__notice {
+  margin: 0;
+  padding: 0;
+  max-width: 544px;
+  font-size: 14px;
+  font-weight: 400;
 }

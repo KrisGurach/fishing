@@ -1,77 +1,112 @@
 import { useRef, useState } from "react";
+import photo from "../../images/form-review.svg";
 
 export default function FormReview() {
   const [image, setImage] = useState(null);
   const fileInputRef = useRef(null); // Создаем реф для инпута
 
   const handleImageChange = (event) => {
-      const file = event.target.files[0];
-      if (file) {
-          const reader = new FileReader();
-          reader.onloadend = () => {
-              setImage(reader.result);
-          };
-          reader.readAsDataURL(file);
-      }
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImage(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
   };
 
   const handleContainerClick = () => {
-      fileInputRef.current.click(); // Имитация клика по инпуту
+    fileInputRef.current.click();
   };
 
   const [rating, setRating] = useState(0);
 
   const handleClick = (index) => {
-    setRating(index + 1); // Устанавливаем рейтинг, основываясь на индексе звезды
+    setRating(index + 1);
   };
+
   return (
     <div>
-      <form>
-      <div>
-            <div
+      <form className="form">
+        <div className="form__flex-container">
+          <div>
+            <div>
+              <div
                 className="image-container"
                 onClick={handleContainerClick}
-                style={{ cursor: 'pointer' }} // Указатель на курсор
-            >
+                style={{
+                  background: image
+                    ? "none"
+                    : "linear-gradient(90deg, #0062BD 100%, #0066FF 100%)",
+                }}
+              >
                 {image ? (
-                    <img
-                        src={image}
-                        alt="Preview"
-                        style={{ width: '300px', height: 'auto' }}
-                    />
+                  <img className="form__preview" src={image} alt="Preview" />
                 ) : (
-                    <div className="placeholder">Кликните для загрузки изображения</div>
+                  <div className="placeholder">
+                    <img
+                      className="form__photo-placeholder"
+                      src={photo}
+                      alt="Placeholder"
+                    />
+                    <div>Загрузите фото с уловом</div>
+                  </div>
                 )}
-            </div>
-            <input
+              </div>
+
+              <input
                 type="file"
                 accept="image/*"
                 onChange={handleImageChange}
-                ref={fileInputRef} // Привязка рефа к инпуту
-                style={{ display: 'none' }} // Скрываем инпут
-            />
-        </div>
+                ref={fileInputRef}
+                style={{ display: "none" }}
+              />
+            </div>
+          </div>
 
-        <div className="form__contacts">
-          <input></input>
-          <input></input>
-        </div>
-        <input></input>
-        <div className="star-rating">
-          {[...Array(5)].map((_, index) => (
-            <Star
-              key={index}
-              filled={index < rating}
-              onClick={() => handleClick(index)}
+          <div>
+            <div className="form__flex-container form__contacts">
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                required
+                className="form__input form__input_name"
+              />
+              <input
+                type="tel"
+                placeholder="Ваш телефон"
+                required
+                className="form__input form__input_phone"
+              />
+            </div>
+
+            <input
+              type="text"
+              placeholder="Оставьте свой отзыв, не более 500 символов"
+              required
+              className="form__input form__input_review"
             />
-          ))}
-        </div>
-        <div>
-          <button>Отправить отзыв</button>
-          <p>
-            Нажимая кнопку «Отправить отзыв», вы даете согласие на обработку
-            персональных данных и соглашаетесь с Политикой конфиденциальности
-          </p>
+
+            <div className="form__flex-container star-rating">
+              <p className="form__star-text">Ваша оценка</p>
+              {[...Array(5)].map((_, index) => (
+                <Star
+                  key={index}
+                  filled={index < rating}
+                  onClick={() => handleClick(index)}
+                />
+              ))}
+            </div>
+            <div className="form__flex-container">
+              <button className="form__button">Отправить отзыв</button>
+              <p className="form__notice">
+                Нажимая кнопку «Отправить отзыв», вы даете согласие на обработку
+                персональных данных и соглашаетесь с Политикой
+                конфиденциальности
+              </p>
+            </div>
+          </div>
         </div>
       </form>
     </div>
