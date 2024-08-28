@@ -1,5 +1,6 @@
 .form {
   margin-top: 120px;
+  margin-left: calc((100% - 1138px) / 2);
 }
 
 .form__flex-container {
@@ -8,7 +9,7 @@
   gap: 24px;
 }
 
-.image-container {
+.form__image-container {
   width: 293px;
   height: 343px;
   position: relative;
@@ -32,16 +33,19 @@
   margin-bottom: 20px;
 }
 
-.placeholder {
+.form__image-placeholder {
   color: var(--white-color);
   max-width: 109px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.form__text-placeholder {
   font-family: "Unbounded";
   font-size: 16px;
-  font-family: 500;
+  font-weight: 500;
   line-height: 1.5;
 }
 
@@ -53,12 +57,18 @@
   width: 395px;
   height: 40px;
   padding: 0 0 0 20px;
-  border: 2px solid var(--light-grey-color);
+  border: none;
+  outline: 2px solid var(--light-grey-color);
   border-radius: 25px;
   box-sizing: border-box;
 }
 
+.form__input:active, .form__input:hover, .form__input:focus {
+  outline: 2px solid var(--orange-color);
+}
+
 .form__input_review {
+  padding-top: 19px;
   margin-bottom: 20px;
   width: 814px;
   height: 160px;
@@ -71,26 +81,21 @@
   line-height: 1.22;
 }
 
-.star-rating {
+.form__star-rating {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.star {
+.form__star {
   font-size: 30px;
   color: lightgray;
   transition: color 0.2s;
 }
 
-.star.filled {
+.form__star.filled {
   color: var(--orange-color);
-}
-
-.rating-value {
-  margin-left: 10px; /* Отступ между звездами и количеством */
-  font-size: 20px; /* Размер шрифта для отображения оценки */
 }
 
 .form__star-text {

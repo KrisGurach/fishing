@@ -33,7 +33,7 @@ export default function FormReview() {
           <div>
             <div>
               <div
-                className="image-container"
+                className="form__image-container"
                 onClick={handleContainerClick}
                 style={{
                   background: image
@@ -42,15 +42,15 @@ export default function FormReview() {
                 }}
               >
                 {image ? (
-                  <img className="form__preview" src={image} alt="Preview" />
+                  <img className="form__preview" src={image} alt="загруженное изображение" />
                 ) : (
-                  <div className="placeholder">
+                  <div className="form__image-placeholder">
                     <img
                       className="form__photo-placeholder"
                       src={photo}
-                      alt="Placeholder"
+                      alt="загрузите фото"
                     />
-                    <div>Загрузите фото с уловом</div>
+                    <div className="form__text-placeholder">Загрузите фото с уловом</div>
                   </div>
                 )}
               </div>
@@ -81,14 +81,14 @@ export default function FormReview() {
               />
             </div>
 
-            <input
-              type="text"
+            <textarea
               placeholder="Оставьте свой отзыв, не более 500 символов"
               required
+              rows="5"
               className="form__input form__input_review"
             />
 
-            <div className="form__flex-container star-rating">
+            <div className="form__flex-container form__star-rating">
               <p className="form__star-text">Ваша оценка</p>
               {[...Array(5)].map((_, index) => (
                 <Star
@@ -115,7 +115,7 @@ export default function FormReview() {
 
 const Star = ({ filled, onClick }) => {
   return (
-    <span className={`star ${filled ? "filled" : ""}`} onClick={onClick}>
+    <span className={`form__star ${filled ? "filled" : ""}`} onClick={onClick}>
       ★
     </span>
   );
