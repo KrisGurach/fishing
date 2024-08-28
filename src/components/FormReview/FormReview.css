@@ -1,0 +1,36 @@
+.image-container {
+  width: 300px;
+  height: 200px;
+  background-color: lightblue; /* Синий фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #ccc; /* Пример стиля обрамления */
+  margin-top: 10px;
+}
+
+.placeholder {
+  color: #555; /* Цвет текста для плейсхолдера */
+  text-align: center;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center; /* Выравнивание по центру */
+  cursor: pointer; /* Указатель при наведении на звезды */
+}
+
+.star {
+  font-size: 30px; /* Размер звезд */
+  color: lightgray; /* Цвет пустой звезды */
+  transition: color 0.2s; /* Плавный переход цвета */
+}
+
+.star.filled {
+  color: gold; /* Цвет заполненной звезды */
+}
+
+.rating-value {
+  margin-left: 10px; /* Отступ между звездами и количеством */
+  font-size: 20px; /* Размер шрифта для отображения оценки */
+}

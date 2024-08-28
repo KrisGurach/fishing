@@ -1,6 +1,7 @@
 import Abonement from "../Abonement/Abonement";
 import Action from "../Action/Action";
 import CardFish from "../CardFish/CardFish";
+import FormReview from "../FormReview/FormReview";
 import Price from "../Price/Price";
 import Reviews from "../Reviews/Reviews";
 import Rules from "../Rules/Rules";
@@ -55,8 +56,9 @@ export default function Main() {
         <Reviews />
       </section>
 
-      <section className="about the catch">
+      <section className="form-review">
         <h2 className="section-header">Похвастайся уловом</h2>
+        <FormReview />
         <form>
 
         </form>
