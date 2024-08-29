@@ -1,0 +1,33 @@
+.contacts__flex-container {
+  margin-left: calc((100% - 744px) / 2);
+  max-width: 744px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.contacts__container {
+  min-width: 211px;
+}
+
+.contacts__title {
+  color: var(--blue-element-color);
+  font-family: "Unbounded";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+.contacts__text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+.contacts__map {
+  margin-left: calc((100% - 1116px) / 2);
+  margin-bottom: 70px;
+  min-width: 80%;
+  height: 620px;
+  border-radius: 50px;
+}

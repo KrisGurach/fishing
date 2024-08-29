@@ -47,8 +47,6 @@ export default function TerrainSlider() {
   }, []);
 
   return (
-    <section className="terrain" id="terrain">
-      <h2 className="section-header">Местность</h2>
       <div className="terrain__flex-container">
         <div className="terrain__slider-container">
           <Slider ref={sliderRef} {...settings}>
@@ -92,6 +90,5 @@ export default function TerrainSlider() {
           </div>
         </div>
       </div>
-    </section>
   );
 }

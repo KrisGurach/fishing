@@ -1,6 +1,7 @@
 import Abonement from "../Abonement/Abonement";
 import Action from "../Action/Action";
 import CardFish from "../CardFish/CardFish";
+import Contacts from "../Contacts/Contacts";
 import FormReview from "../FormReview/FormReview";
 import Price from "../Price/Price";
 import Reviews from "../Reviews/Reviews";
@@ -24,7 +25,10 @@ export default function Main() {
         <div className="promotion__container"></div>
       </section>
 
-      <TerrainSlider />
+      <section className="terrain" id="terrain">
+        <h2 className="section-header">Местность</h2>
+        <TerrainSlider />
+      </section>
 
       <section className="bestiary" id="bestiary">
         <h2 className="section-header">Бестиарий</h2>
@@ -59,13 +63,11 @@ export default function Main() {
       <section className="form-review">
         <h2 className="section-header">Похвастайся уловом</h2>
         <FormReview />
-        <form>
-
-        </form>
       </section>
 
       <section className="contacts" id="contacts">
         <h2 className="section-header">Контакты</h2>
+        <Contacts />
       </section>
     </section>
   )
